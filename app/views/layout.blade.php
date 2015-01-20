@@ -36,15 +36,16 @@
           <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+          {{ Form::open(['route' => 'login', 'method' => 'POTS', 'role' => 'form', 'class' => 'navbar-form navbar-right']) }}
+
             <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+                {{ Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'E-mail']) }}
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+                {{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'E-mail']) }}
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          {{ Form::close() }}
         </div><!--/.navbar-collapse -->
       </div>
     </nav>

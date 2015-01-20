@@ -17,3 +17,23 @@ Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('candidates/{slug}/{id}', ['as' => 'category', 'uses' => 'CandidatesController@category']);
 
 Route::get('{slug}/{id}', ['as' => 'candidate', 'uses' => 'CandidatesController@show']);
+
+Route::get('sign-up', ['as' => 'sign_up', 'uses' => 'UserController@signUp']);
+Route::post('sign-up', ['as' => 'register', 'uses' => 'UserController@register']);
+
+Route::post('login', ['as' => 'login', 'uses' => 'AuthController@login']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
