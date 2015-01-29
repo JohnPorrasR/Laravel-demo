@@ -21,7 +21,9 @@ Route::get('{slug}/{id}', ['as' => 'candidate', 'uses' => 'CandidatesController@
 Route::get('sign-up', ['as' => 'sign_up', 'uses' => 'UserController@signUp']);
 Route::post('sign-up', ['as' => 'register', 'uses' => 'UserController@register']);
 
+// usuarios login
 Route::post('login', ['as' => 'login', 'uses' => 'AuthController@login']);
+Route::get('logout', ['as' => 'logout', 'uses' => 'AuthController@logout']);
 
 
 

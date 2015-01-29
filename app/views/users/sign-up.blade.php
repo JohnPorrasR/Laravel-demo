@@ -12,8 +12,6 @@
 
                 {{ Field::email('email') }}
 
-                {{ Field::email('email') }}
-
                 {{ Field::password('password') }}
 
                 {{ Field::password('password_confirmation') }}

@@ -7,10 +7,11 @@
         <div class="container">
             <h1>HireMe</h1>
             <p>
-                Proyecto que estamos construyendo con Laravel para el curso profesional
-                de PHP y Laravel de Mejorando.la:
-                <a href="https://mejorando.la/cursos/php-laravel">
-                    https://mejorando.la/cursos/php-laravel
+                Aprendiendo laravel 4.
+                &nbsp;
+                &nbsp;
+                <a href="https://johnporrasr.github.io">
+                    johnporrasr.github.io
                 </a>
             </p>
             <p><a href="{{ route('sign_up') }}" class="btn btn-primary btn-lg" role="button">Postúlate &raquo;</a></p>
